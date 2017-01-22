@@ -10,14 +10,6 @@ user stories
 - admin
 
 
-## Koharu (first time visitor)
-
-Koharu has heard that Europe Transfer can import goods from europe that she could not get herself due to some restrictions (credit card not accepted, shipment to Japan not available, etc.). She's interested to see what Europe Transfer has to offer and checks out the site.
-
-- Koharu finds information about the company and services and gets in contact via email.
-- Koharu is excited and creates an account with the system.
-
-
 ## Kenji (transfer-option-user)
 
 Kenji owns a small business and he would like to buy 50 Gucci bags and some shoes from Italy. He wants to pay for the goods himself but needs Europe Transfer to store and ship them to Japan.
