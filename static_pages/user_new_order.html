@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Europe Transfer | new order</title>
+
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+
+  <style>
+    body {
+      padding-top: 70px;
+      padding-bottom: 70px;
+    }
+
+    .order-item-form {
+      border-bottom: 1px solid #ccc;
+      margin-bottom: 20px;
+    }
+
+    .order-form__comment {
+      margin-top: 15px;
+    }
+  </style>
+
+  <script src="scripts/jquery-3.1.1.min.js"></script>
+  <script src="bootstrap/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+  <nav class="navbar navbar-default navbar-fixed-top">
+
+    <!-- container-fluid -->
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">Europe Transfer</a>
+      </div>
+
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">Order Overview</a></li>
+        <li class="active"><a href="#">New Order</a></li>
+        <li><a href="#">Charge Account ($400)</a></li>
+
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+            <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+            <span class="caret"></span>
+          </a>
+
+          <ul class="dropdown-menu">
+            <li><a href="#">Profile</a></li>
+            <li><a href="#">Logout</a></li>
+          </ul>
+        </li>
+      </ul>
+
+    </div><!-- /container-fluid -->
+  </nav>
+
+  <!-- container -->
+  <div class="container">
+
+    <div class="page-header">
+      <h1>New Order</h1>
+      <p>
+        We will guide you through the process of creating or registering a new order. You will need to enter some product information and provide links to the products you have bought or would like Europe Transfer to purchase for you.
+      </p>
+    </div>
+
+    <div class="panel panel-default panel-info">
+      <div class="panel-heading">
+        Account Info
+      </div>
+      <div class="panel-body">
+        Please make sure that you have enough money in your account to create your Order. Your current balance is
+        <strong class="text-info">$400</strong>.
+        If needed, you can <a href="#">charge your account</a>.
+      </div>
+    </div>
+
+    <form action="#" method="post" class="form-horizontal">
+
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          Order Type
+        </div>
+        <div class="panel-body">
+
+          <!-- row -->
+          <div class="row">
+            <div class="col-md-6">
+              <div class="radio">
+                <label>
+                  <input type="radio" name="orderTypeRadios" id="transfer" value="transfer" checked>
+                    Transfer
+                </label>
+              </div>
+              <p class="order-form__comment">Choose this option if you have bought goods and would like Europe Transfer to bring them to Japan. Please tell us about the goods to be shipped and if you would like to avail yourself of any further services we have to offer.</p>
+            </div>
+
+            <div class="col-md-6">
+              <div class="radio">
+                <label>
+                  <input type="radio" name="orderTypeRadios" id="purchase" value="purchase" disabled>
+                    Purchase
+                </label>
+              </div>
+              <p class="order-form__comment">Select this option if you would like Europe Transfer to purchase goods on your behest and bring them to Japan. In order to choose this option, you will be required to pay a fee in the form of a subscription to our services. Once you have <a href="#">subscribed</a> we will unlock this option for your account.</p>
+            </div>
+          </div> <!-- /row -->
+
+        </div>
+     </div>
+
+      <!-- order-items-form -->
+      <div class="order-items-form">
+
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            Order Items
+          </div>
+          <div class="panel-body">
+
+            <!-- order-item-form -->
+            <div class="order-item-form">
+
+              <div class="form-group">
+                <label for="product_name_1" class="col-sm-2 control-label">Product Name</label>
+                <div class="col-sm-6">
+                  <input type="text" class="form-control" id="product_name_1" placeholder="Gucci handbag">
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="product_url_1" class="col-sm-2 control-label">Link</label>
+                <div class="col-sm-6">
+                  <input type="text" class="form-control" id="product_url_1" placeholder="Gucci handbag">
+                </div>
+              </div>
+
+            </div> <!-- /order-item-form -->
+
+            <!-- order-item-form -->
+            <div class="order-item-form">
+
+              <div class="form-group">
+                <label for="product_name_1" class="col-sm-2 control-label">Product Name</label>
+                <div class="col-sm-10">
+                  <input type="text" class="form-control" id="product_name_1" placeholder="Gucci handbag">
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="product_url_1" class="col-sm-2 control-label">Link</label>
+                <div class="col-sm-10">
+                  <input type="text" class="form-control" id="product_url_1" placeholder="Gucci handbag">
+                </div>
+              </div>
+
+            </div> <!-- /order-item-form -->
+
+
+
+          </div>
+        </div>
+
+      </div> <!-- order-items-form -->
+
+    </form>
+
+  </div> <!-- /container -->
+
+  <nav class="navbar navbar-default navbar-fixed-bottom">
+    <div class="container-fluid">
+      <p class="navbar-text">Contact: europe@transfer.jp</p>
+
+      <ul class="nav navbar-nav">
+        <li><a href="#">Terms and Conditions</a></li>
+      </ul>
+    </div>
+  </nav>
+
+</body>
+</html>
