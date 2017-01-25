@@ -16,6 +16,10 @@
       margin-top: 15px;
     }
 
+    .single-button {
+      margin-bottom: 80px;
+    }
+
   </style>
 
   <script src="scripts/jquery-3.1.1.min.js"></script>
@@ -32,7 +36,7 @@
       </div>
 
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#">Order Overview</a></li>
+        <li><a href="./user_order_overview.html">Order Overview</a></li>
         <li class="active"><a href="#">New Order</a></li>
         <li><a href="#">Charge Account ($400)</a></li>
 
@@ -65,7 +69,7 @@
       </p>
     </div>
 
-    <form action="#" method="post">
+    <form action="#">
 
       <div class="panel panel-default">
         <div class="panel-heading">
@@ -200,17 +204,46 @@
               </div>
             </div>
 
-            <div class="pull-right">
-              <div class="btn btn-primary single-button">
-                <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
-                add another item
-              </div>
-            </div>
-
           </div>
         </div>
 
       </div> <!-- order-items-form -->
+
+      <div class="single-button clear">
+        <div class="pull-right">
+          <div class="btn btn-primary single-button">
+            <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
+            add another item
+          </div>
+        </div>
+      </div>
+
+      <!-- services -->
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          Additional Services
+        </div>
+        <div class="panel-body form-horizontal">
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" value="">
+              Storage ($10 / week)
+            </label>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" value="">
+              Wrapping ($10 / piece?)
+            </label>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" value="">
+              Gift-wrapping ($10 / piece?)
+            </label>
+          </div>
+        </div>
+      </div>
 
       <!-- shipping address -->
       <div class="panel panel-default">
