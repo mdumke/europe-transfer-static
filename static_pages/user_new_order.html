@@ -12,14 +12,10 @@
       padding-bottom: 70px;
     }
 
-    .order-item-form {
-      border-bottom: 1px solid #ccc;
-      margin-bottom: 20px;
-    }
-
     .order-form__comment {
       margin-top: 15px;
     }
+
   </style>
 
   <script src="scripts/jquery-3.1.1.min.js"></script>
@@ -62,22 +58,14 @@
     <div class="page-header">
       <h1>New Order</h1>
       <p>
-        We will guide you through the process of creating or registering a new order. You will need to enter some product information and provide links to the products you have bought or would like Europe Transfer to purchase for you.
+        We will guide you through the process of creating or registering a new order.
+        Please make sure that you have enough money in your account to create your Order. Your current balance is
+        $400. If needed, you can
+        <a href="#">charge your account</a>.
       </p>
     </div>
 
-    <div class="panel panel-default panel-info">
-      <div class="panel-heading">
-        Account Info
-      </div>
-      <div class="panel-body">
-        Please make sure that you have enough money in your account to create your Order. Your current balance is
-        <strong class="text-info">$400</strong>.
-        If needed, you can <a href="#">charge your account</a>.
-      </div>
-    </div>
-
-    <form action="#" method="post" class="form-horizontal">
+    <form action="#" method="post">
 
       <div class="panel panel-default">
         <div class="panel-heading">
@@ -109,61 +97,213 @@
           </div> <!-- /row -->
 
         </div>
-     </div>
+      </div>
 
       <!-- order-items-form -->
-      <div class="order-items-form">
-
+      <div class="order-items-form form-horizontal">
         <div class="panel panel-default">
           <div class="panel-heading">
-            Order Items
+            Order Item
           </div>
           <div class="panel-body">
 
-            <!-- order-item-form -->
-            <div class="order-item-form">
+            <div class="row">
+              <div class="col-md-6">
 
-              <div class="form-group">
-                <label for="product_name_1" class="col-sm-2 control-label">Product Name</label>
-                <div class="col-sm-6">
-                  <input type="text" class="form-control" id="product_name_1" placeholder="Gucci handbag">
-                </div>
+                <!-- order-item-form -->
+                <div class="order-item-form">
+
+                  <div class="form-group">
+                    <label for="product_name_1" class="col-md-4 control-label">Product Name</label>
+                    <div class="col-md-8">
+                      <input type="text" class="form-control" id="product_name_1" placeholder="Gucci handbag">
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="product_name_1" class="col-md-4 control-label">Brand</label>
+                    <div class="col-md-8">
+                      <input type="text" class="form-control" id="product_name_1" placeholder="Gucci">
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="product_url_1" class="col-md-4 control-label">Size</label>
+                    <div class="col-md-8">
+                      <input type="text" class="form-control" id="product_url_1" placeholder="XXL">
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="product_url_1" class="col-md-4 control-label">Weight</label>
+                    <div class="col-md-8">
+                      <input type="number" class="form-control" id="product_url_1" placeholder="150">
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="product_url_1" class="col-md-4 control-label">Link</label>
+                    <div class="col-md-8">
+                      <div class="input-group">
+                        <span class="input-group-addon">http://</span>
+                        <input type="text" class="form-control" id="product_url_1" placeholder="www.gucci.com/bags">
+                      </div>
+                    </div>
+                  </div>
+
+                </div> <!-- /order-item-form -->
+
               </div>
 
-              <div class="form-group">
-                <label for="product_url_1" class="col-sm-2 control-label">Link</label>
-                <div class="col-sm-6">
-                  <input type="text" class="form-control" id="product_url_1" placeholder="Gucci handbag">
-                </div>
+              <div class="col-md-6">
+
+                <!-- order-item-form -->
+                <div class="order-item-form">
+
+                  <div class="form-group">
+                    <label for="product_url_1" class="col-md-4 control-label">Piece Price</label>
+                    <div class="col-md-8">
+                      <input type="number" class="form-control" id="product_url_1" placeholder="100">
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="product_url_1" class="col-md-4 control-label">Amount</label>
+                    <div class="col-md-8">
+                      <input type="number" class="form-control" id="product_url_1" placeholder="1">
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <label class="col-md-4 control-label"></label>
+                    <div class="col-md-8">
+                      <p class="form-control-static"></p>
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <label class="col-md-4 control-label"></label>
+                    <div class="col-md-8">
+                      <p class="form-control-static"></p>
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <label class="col-md-4 control-label">Subtotal</label>
+                    <div class="col-md-8">
+                      <p class="form-control-static">$200</p>
+                    </div>
+                  </div>
+
+                </div> <!-- /order-item-form -->
+
               </div>
+            </div>
 
-            </div> <!-- /order-item-form -->
-
-            <!-- order-item-form -->
-            <div class="order-item-form">
-
-              <div class="form-group">
-                <label for="product_name_1" class="col-sm-2 control-label">Product Name</label>
-                <div class="col-sm-10">
-                  <input type="text" class="form-control" id="product_name_1" placeholder="Gucci handbag">
-                </div>
+            <div class="pull-right">
+              <div class="btn btn-primary single-button">
+                <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
+                add another item
               </div>
-
-              <div class="form-group">
-                <label for="product_url_1" class="col-sm-2 control-label">Link</label>
-                <div class="col-sm-10">
-                  <input type="text" class="form-control" id="product_url_1" placeholder="Gucci handbag">
-                </div>
-              </div>
-
-            </div> <!-- /order-item-form -->
-
-
+            </div>
 
           </div>
         </div>
 
       </div> <!-- order-items-form -->
+
+      <!-- shipping address -->
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          Shipping Address
+        </div>
+        <div class="panel-body form-horizontal">
+          <div class="row">
+            <div class="col-md-6">
+
+              <div class="form-group">
+                <label for="product_name_1" class="col-md-4 control-label">First Name</label>
+                <div class="col-md-8">
+                  <input type="text" class="form-control" id="product_name_1" placeholder="Timuru">
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="product_name_2" class="col-md-4 control-label">Last Name</label>
+                <div class="col-md-8">
+                  <input type="text" class="form-control" id="product_name_2" placeholder="Utsuru">
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="product_name_1" class="col-md-4 control-label">Tel.</label>
+                <div class="col-md-8">
+                  <input type="tel" class="form-control" id="product_name_1" placeholder="123-456-789">
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="product_name_2" class="col-md-4 control-label">Email</label>
+                <div class="col-md-8">
+                  <input type="text" class="form-control" id="product_name_2" placeholder="handle@domain.com">
+                </div>
+              </div>
+
+            </div>
+            <div class="col-md-6">
+
+              <div class="form-group">
+                <label for="product_name_3" class="col-md-4 control-label">Address (part I)</label>
+                <div class="col-md-8">
+                  <input type="text" class="form-control" id="product_name_3" placeholder="???">
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="product_name_4" class="col-md-4 control-label">Address (part II)</label>
+                <div class="col-md-8">
+                  <input type="text" class="form-control" id="product_name_4" placeholder="???">
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="product_name_5" class="col-md-4 control-label">Address (part III)</label>
+                <div class="col-md-8">
+                  <input type="text" class="form-control" id="product_name_5" placeholder="???">
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="product_name_1" class="col-md-4 control-label">Address (part IV)</label>
+                <div class="col-md-8">
+                  <input type="text" class="form-control" id="product_name_1" placeholder="???">
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- billing address -->
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          Billing Address
+        </div>
+        <div class="panel-body form-horizontal">
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" checked>Same as shipping address
+            </label>
+          </div>
+        </div>
+      </div>
+
+    <button type="submit" class="btn btn-default btn-primary pull-right">
+      Proceed to order confirmation
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    </button>
 
     </form>
 
